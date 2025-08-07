@@ -1,30 +1,64 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tax Solutions by Kamlesh Choudhary</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Tax Solutions - Navigation</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', serif;
+      background-color: #fff;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      background-color: #fdf6ec; /* soft beige */
+      border-bottom: 2px solid #d4af37; /* gold bottom line */
+      padding: 20px 0;
+      flex-wrap: wrap;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #333;
+      padding: 12px 20px;
+      font-weight: bold;
+      font-size: 18px;
+      transition: all 0.3s ease;
+      border-radius: 5px;
+    }
+
+    .navbar a:hover {
+      background-color: #d4af37;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .navbar a {
+        width: 90%;
+        text-align: center;
+        margin-bottom: 8px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header class="hero">
-        <h1>Trusted Tax Consultant – Kamlesh Choudhary</h1>
-    </header>
-    <section class="services">
-        <div class="service-box">
-            <img src="icon1.png" alt="icon">
-            <p>Accounts Writing</p>
-        </div>
-        <div class="service-box">
-            <img src="icon2.png" alt="icon">
-            <p>Income Tax</p>
-        </div>
-        <div class="service-box">
-            <img src="icon3.png" alt="icon">
-            <p>GST Returns</p>
-        </div>
-        <!-- Add more services as needed -->
-    </section>
+
+  <nav class="navbar">
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Articles</a>
+    <a href="#">Tax Calendar</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact Us</a>
+    <a href="#">Careers</a>
+  </nav>
+
 </body>
 </html>
