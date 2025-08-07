@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Top Navigation Menu</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      background-color: #f4f4f4;
+      border-bottom: 2px solid #ccc;
+      padding: 15px 0;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #333;
+      padding: 10px 20px;
+      font-weight: bold;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #d4af37; /* gold shade */
+      color: white;
+      border-radius: 5px;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-wrap: wrap;
+      }
+
+      .navbar a {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Articles</a>
+    <a href="#">Tax Calendar</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact Us</a>
+    <a href="#">Careers</a>
+  </nav>
+
+</body>
+</html>
